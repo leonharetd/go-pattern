@@ -50,6 +50,6 @@ func (b *BuildContract) SetEndDate(date int64) *BuildContract{
 	return b
 }
 
-func (b *BuildContract) Build() InsuranceContract{
+func (b BuildContract) Build() InsuranceContract{
 	return b.contract
 }
