@@ -4,11 +4,11 @@ import "testing"
 
 func TestFactory(t *testing.T) {
 	dbFactory := ExportDBFactory{}
-	db := dbFactory.Build()
+	db := dbFactory.CreateExport()
 	db.Export("db")
 
 	fileFactory := ExportTxtFileFactory{}
-	file := fileFactory.Build()
+	file := fileFactory.CreateExport()
 	file.Export("file")
 	
 }

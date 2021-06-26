@@ -21,15 +21,15 @@ func (db *ExportDB) Export(data string) bool {
 }
 
 type IExportFactory interface {
-	Build() ExportApi
+	CreateExport() ExportApi
 }
 
 type ExportTxtFileFactory struct{}
-func (e *ExportTxtFileFactory) Build() ExportApi {
+func (e *ExportTxtFileFactory) CreateExport() ExportApi {
 	return &ExportTxtFile{}
 }
 
 type ExportDBFactory struct{}
-func (e *ExportDBFactory) Build() ExportApi {
+func (e *ExportDBFactory) CreateExport() ExportApi {
 	return &ExportDB{}
 }
