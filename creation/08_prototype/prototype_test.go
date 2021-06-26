@@ -14,4 +14,5 @@ func TestPrototype(t *testing.T) {
 	p1.set("dfd", "clone from p")
 	fmt.Println(p1.Lab)
 
+	
 }
