@@ -20,4 +20,5 @@ func (l *CloneLab) Clone() CloneLab {
 	return CloneLab{
 		Lab: newMap,
 	}
+	
 }
