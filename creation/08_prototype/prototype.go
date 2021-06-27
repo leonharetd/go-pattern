@@ -13,12 +13,12 @@ func (l *CloneLab) set(key, value string) {
 }
 
 func (l *CloneLab) Clone() CloneLab {
-	newMap := make(map[string]string, 0)
+	newMap := make(map[string]string)
 	for k,v := range l.Lab {
 		newMap[k] = v
 	  }
 	return CloneLab{
 		Lab: newMap,
 	}
-	
+
 }
