@@ -55,6 +55,7 @@ func (db *ImportFile) Import(data string) bool {
 type ImportDB struct {
 	Data string
 }
+
 func (db *ImportDB) Import(data string) bool {
 	db.Data = data
 	fmt.Println("Import DB", data)
